@@ -1,0 +1,66 @@
+
+            +--------+
+            |   user |
+            +--------+
+                |
+        +---------------+
+        |       CODE    |
+        |    (nodejs,   |
+        |    java,php)  |
+        +---------------+
+                | (CRUD)
+        +-------------------+
+        |   mongodb driver  |
+        |    server         |
+        +-------------------+                
+                |
+        +-------------------+
+        |   File storage    | (COLLECTIONS)
+        |      system       |
+        +-------------------+
+              
+
+
+
+
+
+
+
+
+
+DATABASE IS LIKE DATABASE IN SQL
+
+COLLECTIONS   EQUIVALENT TO TABLES
+
+
+DOCUMENT EQUIVALENT TO RECORDS
+
+
+-------------------------FOR DATABASES------------------------
+
+CMD
+    SHOW DBS;
+
+    use <DATABASE-NAME-WE-WANT>         //AUTOMATICALLY SWAITCH TO SPECIFIED DATABASE
+
+    BUT if we type SHOW DBS, we actually dont see our new DATABASE.Because it is created on the fly
+    and it will only shows when we inserted some data. 
+
+    For collections
+
+    db.<collection-name>.<CRUD-command>
+
+    COLLECTIONS     having the json document type objects data,having key-value pair.
+    
+-------------------TO GET ALL DATA------------------------
+ 
+ db.collection.find().pretty()
+    
+    
+Actually MONGODB stores data in BSON format.
+
+JSON          ====>    MONGODB DRIVER        =====>    Binary data,Extends json types,Efficient storage.
+
+This is a BSON type and data.
+Ex   "_id" : ObjectId("5e7f819d961e5b8b76d37060"), 
+We can also send _id of our own, whatever we like but mongodb do it for us.

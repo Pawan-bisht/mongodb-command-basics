@@ -1,0 +1,11 @@
+db.<collection-name>.insertOne({
+    name:"pawan"
+})
+
+        OR
+
+db.<collection-name>.insertMany([
+    {},
+    {},
+    ...
+])

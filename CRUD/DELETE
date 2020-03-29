@@ -1,0 +1,7 @@
+
+
+db.<collection-name>.deleteOne({
+    nkey:value       //By condition which document we want to delete
+})
+
+    
