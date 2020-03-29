@@ -1,7 +1,10 @@
 
 
 db.<collection-name>.deleteOne({
-    nkey:value       //By condition which document we want to delete
+    key:value       //By condition which document we want to delete
 })
 
-    
+db.<collection-name>.deleteMany({
+    condition-for-particular-records.
+    It can delete all the data, If matches all of them.
+})   

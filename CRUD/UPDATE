@@ -1,0 +1,22 @@
+db.<collcetion_name>.uodateOne(
+    {condition for which document},
+    {$set{updated/ne value}})
+
+
+For some particular data/document
+
+db.flightData.updateOne({distance:12000},{$set:{marker:true}});
+
+
+For all the document to update.
+
+db.flightData.updateMany({ },{$set:{marker:true}});
+
+
+-----------------------update vs updateMany------------------------------
+
+
+in update    all the object is replcaed with provided one.
+But in updateMany or updateOne only required information is updated.
+To replace the whole object with another is by using 
+    replaceOne({condition},{object-to-replace-with-whole-one});
